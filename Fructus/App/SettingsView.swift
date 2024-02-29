@@ -13,7 +13,7 @@ struct SettingsView: View {
     @AppStorage("isOnboarding") var isOnboarding: Bool = false
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ScrollView(.vertical) {
                 VStack(spacing: 20, content: {
                     GroupBox(label: SettingsLabelView(labelText: "Fructus", labelImage: "info.circle"), content: {
